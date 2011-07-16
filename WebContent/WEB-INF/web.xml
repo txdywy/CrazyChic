@@ -7,7 +7,7 @@
   </servlet>
   <servlet-mapping>
 		<servlet-name>WelcomeServlet</servlet-name>
-		<url-pattern>/CrazyChick/welcome</url-pattern>
+		<url-pattern>/crazychick/welcome</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -16,7 +16,7 @@
   </servlet>
   <servlet-mapping>
 	<servlet-name>HomeServlet</servlet-name>
-	<url-pattern>/CrazyChick/home</url-pattern>
+	<url-pattern>/crazychick/home</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

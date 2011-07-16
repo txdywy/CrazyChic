@@ -8,16 +8,7 @@
 </head>
 <body>
   <script type="text/javascript">
-	  var uiOpts = {
-		  url : "http://graph.renren.com/oauth/authorize",
-		  display : "iframe",
-		  params : {"response_type":"token","client_id":"${requestScope.appId}"},
-		  onSuccess: function(r){
-		    top.location = "http://apps.renren.com/crazychick/home";
-		  },
-		  onFailure: function(r){} 
-	  };
-	  Renren.ui(uiOpts);
+      top.location="http://graph.renren.com/oauth/authorize?client_id=${requestScope.appId}&response_type=token&display=page&redirect_uri=" + encodeURIComponent("http://apps.renren.com/crazychick/home");
   </script>
   <% java.util.Date d = new java.util.Date(); %>
   <h1>
